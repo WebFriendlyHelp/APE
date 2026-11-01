@@ -23,6 +23,7 @@ body:
         - Screen reader support
         - Keyboard navigation
         - Calls or voicemail
+        - Notes or contacts
         - Playing voice messages
         - Exporting
         - Installing or updating
@@ -76,8 +77,9 @@ body:
     attributes:
       label: Backup type
       options:
-        - Encrypted
-        - Not encrypted
+        - iPhone, encrypted
+        - iPhone, not encrypted
+        - Android, SMS Backup and Restore
         - Not sure
     validations:
       required: false
