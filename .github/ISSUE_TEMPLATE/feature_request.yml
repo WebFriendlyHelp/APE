@@ -19,6 +19,7 @@ body:
         - Keyboard navigation improvement
         - Reading or navigating conversations
         - Calls, voicemail, or attachments
+        - Notes or contacts
         - Exporting
         - Other
     validations:
