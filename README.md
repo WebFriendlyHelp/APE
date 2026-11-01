@@ -1,11 +1,11 @@
 # Accessible Phone Extractor (APE)
 
-Read and archive your iPhone messages, accessibly. Called the
+Read and archive the messages on your phone, accessibly. Called the
 Accessible Conversation Extractor (ACE) until November 2026.
 
 APE is a Windows desktop program from Web Friendly Help LLC. It reads a backup
-of your iPhone that is already on your computer and turns the messages, calls
-and voicemails into something you can actually read with a screen reader, move
+of your iPhone or Android phone that is already on your computer and turns the
+messages, calls, voicemails, notes and contacts into something you can actually read with a screen reader, move
 through by keyboard, and export to a document you can keep.
 
 This repository is where official APE builds are published. It carries the
@@ -28,14 +28,17 @@ Every release also carries a `.sha256` file beside each download, so you can
 check that what you received is what was published. APE checks this for you
 automatically when it updates itself.
 
-Current Windows builds are not code signed yet, so Windows SmartScreen or your
-browser may warn you about an unrecognised publisher. Download only from the
+Windows builds are code signed by Web Friendly Help LLC. APE is new, so Windows
+SmartScreen may still warn you until enough people have downloaded it; choosing
+More info shows Web Friendly Help LLC as the publisher. Download only from the
 releases page linked above.
 
 ## What APE does
 
 - Reads an iPhone backup made by iTunes or by Finder, including an encrypted
   one, from a folder already on your computer.
+- Reads an Android phone's messages and calls from the files the SMS Backup and
+  Restore app saves.
 - Presents conversations in a two pane window: the list of conversations, and
   the transcript of whichever one you are reading.
 - Moves you through a transcript by message, by speaker, by day, by month, by
@@ -43,26 +46,32 @@ releases page linked above.
   of text.
 - Gives every message an action menu, so you can copy it, save its attachment,
   or work with it without hunting.
-- Keeps calls and voicemails on their own tabs, reachable with Control plus 1
-  through Control plus 4. A voicemail's transcript is shown as text, which is
-  the only part of a voicemail a deaf-blind reader can reach at all.
+- Keeps voicemails, notes, contacts and calls on tabs of their own beside
+  Messages, reachable with Control plus 1 through Control plus 6. A voicemail's
+  transcript is shown as text, which is the only part of a voicemail a
+  deaf-blind reader can reach at all.
 - Plays voice messages, converting them on demand when Windows cannot play the
   original format.
-- Exports a conversation to Word, plain text or CSV, with an extraction report
-  saying what was read and what was skipped.
+- Exports one conversation or everything to Word, plain text or CSV, with an
+  extraction report saying what was read and what was skipped. Contacts export
+  as a vCard, and voicemail recordings are copied out as MP3 files.
 
 ## Your messages stay on your computer
 
 APE reads a backup that is already on your machine and writes its results to
-your own user folder. Your messages are never uploaded anywhere. The only time
-APE reaches the internet is when you ask it to check for a new version, and when
-it offers to fetch the media converter it needs to play certain voice messages.
+your own user folder. Your messages are never uploaded anywhere. APE reaches the
+internet only to check for a new version, which it does when it starts and once
+a day unless you turn that off in the Help menu, and when it offers to fetch the
+media converter it needs to play certain voice messages.
 
 ## Requirements
 
 - Windows 10 or Windows 11, 64 bit.
 - A backup of your iPhone already on the computer, made by iTunes or by Finder.
-  If the backup is encrypted, you will need its password.
+  If the backup is encrypted, you will need its password. Call history is only
+  in an encrypted iPhone backup; Apple leaves it out of an unencrypted one.
+- Or, for an Android phone, the messages and calls files made by SMS Backup and
+  Restore, copied to the computer.
 - A screen reader if you use one. APE is built for NVDA, JAWS and Narrator, and
   follows the font size, colours and high contrast settings you have chosen in
   Windows rather than overriding them.
