@@ -13,9 +13,9 @@ APE exists because reading iPhone messages with a screen reader was miserable. I
 - A two-pane window: the list of conversations, and the transcript of the one you're reading.
 - Moving through a transcript by message, speaker, day, month, year, or attachment, so a long conversation isn't one wall of text.
 - An action menu on every message, so copying it or saving its attachment doesn't take hunting.
-- Calls and voicemails on their own tabs, reachable with Control plus 1 through Control plus 4.
+- Voicemails, notes, contacts and calls on tabs of their own beside Messages, reachable with Control plus 1 through Control plus 6.
 - Voicemail transcripts shown as text, which is the only part of a voicemail a deaf-blind reader can reach.
-- Exports to Word, plain text, or CSV.
+- Exports to Word, plain text, or CSV, and contacts to a vCard.
 
 WCAG 2.2 AA is the bar I test against where its criteria apply to a desktop program. That's a working standard, not a formal certification.
 
