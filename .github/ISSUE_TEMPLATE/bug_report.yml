@@ -1,5 +1,5 @@
 name: Bug report
-description: Report a problem with ACE, including screen reader, keyboard, export, or update problems
+description: Report a problem with APE, including screen reader, keyboard, export, or update problems
 title: "[BUG] "
 labels:
   - bug
@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting a problem in ACE.
+        Thanks for reporting a problem in APE.
 
         Please do not paste message text, contact names, phone numbers, or attachments from your backup into this form. Issues are public. Describe what happened instead, for example "a conversation with about 2,000 messages from 2019".
 
@@ -16,7 +16,7 @@ body:
     id: area
     attributes:
       label: Area
-      description: What part of ACE is affected?
+      description: What part of APE is affected?
       options:
         - Opening or reading a backup
         - Conversation list or transcript
@@ -32,7 +32,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: ACE version
+      label: APE version
       description: The version is shown on the About item in the Help menu.
       placeholder: "Example: 1.0.0"
     validations:
@@ -86,7 +86,7 @@ body:
     attributes:
       label: Steps to reproduce
       placeholder: |
-        1. Open ACE
+        1. Open APE
         2. Choose the backup
         3. Press ...
     validations:
@@ -109,7 +109,7 @@ body:
     id: error
     attributes:
       label: Error message
-      description: The exact wording of any error ACE showed. Remove anything from your messages first.
+      description: The exact wording of any error APE showed. Remove anything from your messages first.
       render: text
     validations:
       required: false

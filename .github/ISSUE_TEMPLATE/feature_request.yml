@@ -1,5 +1,5 @@
 name: Feature request
-description: Suggest an improvement to ACE
+description: Suggest an improvement to APE
 title: "[FEATURE] "
 labels:
   - enhancement
@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for suggesting an improvement to ACE.
+        Thanks for suggesting an improvement to APE.
 
         Please do not paste message content or personal details from your backup. Issues are public.
   - type: dropdown
